@@ -31,44 +31,31 @@
 </head>
 <body>
 <!-- Navbar -->
-<nav
-        class="navbar navbar-expand-lg navbar-light justify-content-center"
-        style="background-color: #fff"
->
-    <div class="container col">
-        <a class="navbar-brand" href="#">
+<nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: #fff">
+  <div class="container-fluid">
+     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="#">
             <img src="src/images/bolajon logo.png" alt=""/>
         </a>
-    </div>
-    <div
-            class="collapse navbar-collapse justify-content-center"
-            id="navbarSupportedContent"
-    >
-        <form class="d-flex justify-content-center navForm">
-            <input
-                    class="form-control navFormInput me-2"
-                    type="search"
-                    placeholder="Qidirsh"
-                    aria-label="Search"
-            />
-            <button class="btn btn-outline-success navFormButton" type="submit">
-                <i><img src="src/images/search.png" alt=""/></i>
-            </button>
-        </form>
-    </div>
-    <div class="col">
-        <button type="button" class="btn btn-outline-secondary navButton">
-            <i><img src="src/images/Vector.png" alt=""/></i> Aloqa
-        </button>
-    </div>
-    <div class="col">
-        <i><img src="src/images/Telegram.png" alt=""/></i>
-    </div>
-    <div class="navDropDown">
-        <span>
-          <div class="collapse navbar-collapse col" id="navbarNavLightDropdown">Ò
-            <ul class="navbar-nav">
-              <li class="nav-item dropdown">
+        <div class="input-group" style="margin-left: 15em;">
+          <div class="form-outline d-flex">
+            <input id="search-input" type="search" id="form1" class="form-control" placeholder="Qidirish" />
+          </div>
+          <button id="search-button" type="button" class="btn btn-secondary">
+            <i class="fas fa-search"></i>
+          </button>
+        </div>
+    <div class="collapse navbar-collapse" id="navbarScroll">
+      <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+        <li class="nav-item">
+            <button type="button" class="btn btn-outline-secondary d-flex justify-content-evenly" style="width: 130px;" data-mdb-ripple-color="dark"><i><img src="src/images/Vector.png" alt=""/></i>Aloqa</button>
+        </li>
+        <li class="nav-item">
+          <i><img src="src/images/Telegram.png" alt=""/></i>
+        </li>
+        <li class="nav-item dropdown">
                 <a
                         class="nav-link dropdown-toggle"
                         href="#"
@@ -86,11 +73,10 @@
                   <li><a class="dropdown-item" href="#"><i><img src="src/images/uzbekistán.png" alt=""/></i>UZB</a></li>
                   <li><a class="dropdown-item" href="#"><i><img src="src/images/russia.png" alt=""/></i>RUS</a></li>
                 </ul>
-              </li>
-            </ul>
-          </div>
-        </span>
+        </li>
+      </ul>
     </div>
+  </div>
 </nav>
 
 <div class="main">
@@ -1559,6 +1545,48 @@
             }
         });
     });
+    // Generate series of `.navbar-expand-*` responsive classes for configuring
+// where your navbar collapses.
+.navbar-expand {
+  @each $breakpoint in map-keys($grid-breakpoints) {
+    $next: breakpoint-next($breakpoint, $grid-breakpoints);
+    $infix: breakpoint-infix($next, $grid-breakpoints);
+
+    // stylelint-disable-next-line scss/selector-no-union-class-name
+    &#{$infix} {
+      @include media-breakpoint-up($next) {
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+
+        .navbar-nav {
+          flex-direction: row;
+
+          .dropdown-menu {
+            position: absolute;
+          }
+
+          .nav-link {
+            padding-right: $navbar-nav-link-padding-x;
+            padding-left: $navbar-nav-link-padding-x;
+          }
+        }
+
+        .navbar-nav-scroll {
+          overflow: visible;
+        }
+
+        .navbar-collapse {
+          display: flex !important; // stylelint-disable-line declaration-no-important
+          flex-basis: auto;
+        }
+
+        .navbar-toggler {
+          display: none;
+        }
+      }
+    }
+  }
+}
 </script>
 </body>
 </html>

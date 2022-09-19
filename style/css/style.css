@@ -14,24 +14,19 @@ button {
 
 /* navbar */
 .navbar {
+    width: 100vw;
     padding: 0 300px;
     margin-right: 80px;
+    height: auto;
 }
-.navForm {
-    display: block;
+.navbar-nav .nav-item{
+    display: inline-block;
+    margin: 0 50px;
 }
-
-.navFormInput {
-    width: 350px;
-    border-color: #f4f6f9;
-    border-width: 1px;
-    border-style: solid;
-    border-radius: 8px;
-}
-
 .navFormButton {
-    position: relative;
-    right: 60px;
+    position: absolute;
+    float: right;
+    right: 20px;
     color: #f4f6f9;
     background-color: #f4f6f9;
     border-color: #f4f6f9;
@@ -39,33 +34,6 @@ button {
     border-radius: 8px;
 }
 
-.navFormButton:hover {
-    background-color: #f4f6f9;
-    border-color: #f4f6f9;
-    border-width: 1px;
-    border-radius: 8px;
-}
-
-.btn-outline-success:active {
-    border-color: #f4f6f9;
-}
-
-.navButton {
-    background-color: #fff;
-    border-color: #f4f6f9;
-    border-width: 1px;
-    border-style: solid;
-    border-radius: 8px;
-}
-
-.navButton:hover,
-.navButton img {
-    background-color: #f4f6f9;
-    border-color: #f4f6f9;
-    border-width: 1px;
-    border-radius: 8px;
-    color: aqua;
-}
 
 #navbarNavLightDropdown ul li {
     display: inline-block;
@@ -75,7 +43,7 @@ button {
 
 .main {
     position: relative;
-    height: 100vh;
+    height: auto;
     width: 100vw;
     margin: 0;
     padding: 75px 0;
@@ -266,7 +234,7 @@ input[type="range"]::-moz-range-thumb {
 /*info section*/
 .section-3 {
     position: relative;
-    width: 100%;
+    width: 100vw;
     height: 850px;
 }
 
@@ -383,11 +351,39 @@ input[type="range"]::-moz-range-thumb {
 .info-ellipse .column{
     padding-left: 100px;
 }
+.about{
+    margin: 50px 100px;
+}
+.about-head{
+    width: 100vw;
+    margin: 100px;
+}
+
+.mb-3{
+    display: block;
+    position: relative;
+}
+
+.status{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 30px;
+    background: #FB5F5F;
+    border-radius: 8px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about-head-list li{
+display: flex; 
+flex-direction: row;
+}
 
 /*end info section*/
 /*footer section*/
 footer {
-    justify-content: space-evenly;
     position: relative;
     bottom: 0;
     left: 0;
@@ -423,3 +419,16 @@ footer {
 }
 
 /*end footer section*/
+
+@media screen and (max-width:  360px){
+    .navbar{
+        width: 100vw;
+        height: auto;
+    }
+    .section-3{
+        display: none;
+    }
+    footer{
+        width: 100vw;
+    }
+}
