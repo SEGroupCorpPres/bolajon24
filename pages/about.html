@@ -1,162 +1,549 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <!-- Required meta tags -->
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
-  <!-- Bootstrap CSS -->
-  <link
-          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-          rel="stylesheet"
-          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-          crossorigin="anonymous"
-  />
-  <link
-          rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-          integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-          crossorigin="anonymous"
-          referrerpolicy="no-referrer"
-  />
-  <link
-          rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/fontawesome.min.css"
-          integrity="sha512-RvQxwf+3zJuNwl4e0sZjQeX7kUa3o82bDETpgVCH2RiwYSZVDdFJ7N/woNigN/ldyOOoKw8584jM4plQdt8bhA=="
-          crossorigin="anonymous"
-          referrerpolicy="no-referrer"
-  />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-  <link rel="stylesheet" href="../style/css/style.css"/>
-  <title>Bolajon</title>
+    <!-- Bootstrap CSS -->
+    <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+            crossorigin="anonymous"
+    />
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+            integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+    />
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/fontawesome.min.css"
+            integrity="sha512-RvQxwf+3zJuNwl4e0sZjQeX7kUa3o82bDETpgVCH2RiwYSZVDdFJ7N/woNigN/ldyOOoKw8584jM4plQdt8bhA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+    />
+    <!-- Font Awesome -->
+    <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+            rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+            href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+            rel="stylesheet"
+    />
+    <!-- MDB -->
+    <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.css"
+            rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+    <link rel="stylesheet" href="../style/css/about.css"/>
+    <title>Bolajon</title>
 </head>
 <body>
 <!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: #fff">
-  <div class="container-fluid">
-     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <a class="navbar-brand" href="#">
+<nav class="navbar navbar-expand-lg navbar-light bg-light " style="background-color: #fff !important; box-shadow: none">
+    <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#">
             <img src="../src/images/bolajon logo.png" alt=""/>
         </a>
-        <div class="input-group" style="margin-left: 15em;">
-          <div class="form-outline">
-            <input id="search-input" type="search" id="form1" class="form-control" placeholder="Qidirish" />
-          </div>
-          <button id="search-button" type="button" class="btn btn-secondary">
-            <i class="fas fa-search"></i>
-          </button>
+        <div class="input-group" style="margin-left: 15em">
+            <div class="form-outline d-grid">
+                <input id="search-input" type="search" id="form1" class="form-control"/>
+                <label class="form-label" for="form1">Search</label>
+            </div>
+            <button id="search-button" type="button" class="btn btn-primary">
+                <i class="fas fa-search"></i>
+            </button>
         </div>
-    <div class="collapse navbar-collapse" id="navbarScroll">
-      <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-        <li class="nav-item">
-            <button type="button" class="btn btn-outline-secondary d-flex justify-content-evenly" style="width: 130px;" data-mdb-ripple-color="dark"><i><img src="src/images/Vector.png" alt=""/></i>Aloqa</button>
-        </li>
-        <li class="nav-item">
-          <i><img src="src/images/Telegram.png" alt=""/></i>
-        </li>
-        <li class="nav-item dropdown">
-                <a
-                        class="nav-link dropdown-toggle"
-                        href="#"
-                        id="navbarLightDropdownMenuLink"
-                        role="button"
-                        data-bs-toggle="dropdown"
-                        aria-expanded="false"
-                >
-                  <i><img src="../src/images/uzbekistán.png" alt=""/>UZB</i>
-                </a>
-                <ul
-                        class="dropdown-menu dropdown-menu-light"
-                        aria-labelledby="navbarLightDropdownMenuLink"
-                >
-                  <li><a class="dropdown-item" href="#"><i><img src="../src/images/uzbekistán.png" alt=""/></i>UZB</a></li>
-                  <li><a class="dropdown-item" href="#"><i><img src="../src/images/russia.png" alt=""/></i>RUS</a></li>
-                </ul>
-        </li>
-      </ul>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                <li class="nav-item">
+                    <button type="button" class="btn btn-outline-secondary d-flex justify-content-evenly" style="width: 130px;" data-mdb-ripple-color="dark"><i><img src="../src/images/Vector.png"
+                                                                                                                                                                     alt=""/></i>Aloqa
+                    </button>
+                </li>
+                <li class="nav-item">
+                    <i><img src="../src/images/Telegram.png" alt=""/></i>
+                </li>
+                <li class="nav-item dropdown">
+                    <a
+                            class="nav-link dropdown-toggle"
+                            href="#"
+                            id="navbarLightDropdownMenuLink"
+                            role="button"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                    >
+                        <i><img src="../src/images/uzbekistán.png" alt=""/>UZB</i>
+                    </a>
+                    <ul
+                            class="dropdown-menu dropdown-menu-light"
+                            aria-labelledby="navbarLightDropdownMenuLink"
+                    >
+                        <li><a class="dropdown-item" href="#"><i><img src="../src/images/uzbekistán.png" alt=""/></i>UZB</a></li>
+                        <li><a class="dropdown-item" href="#"><i><img src="../src/images/russia.png" alt=""/></i>RUS</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
     </div>
-  </div>
 </nav>
 
 <div class="main">
-  <section class="about container-fluid">
-  <div class="about head">
-    <div class="mb-3">
-      <span class="status">top</span>
-      <div class="row g-0">
-        <div class="col-md-4">
-          <img src="../src/images/sidekix-media-2NHFwqNlpoY-unsplash%201.png" class="img-fluid rounded-start" alt="...">
-        </div>
-        <div class="col-md-8">
-          <div class="body">
-            <h3>INVENTO THE UZBEK INTERNATIONAL SCHOOL</h3>
-            <p>Xususiy bog’cha</p>
-            <div class="row">
-              <ul class="about-head-list">
-                <li>
-                  <span class="material-symbols-outlined">alarm</span>
-                  <p>08:00 - 18:00</p>
-                </li>
-                <li><span class="material-symbols-outlined">
-sentiment_very_satisfied
-</span><p>2 yoshdan - 7 yoshgacha</p></li>
-<li><span class="material-symbols-outlined">
-location_on
-</span>Toshkent shahri , Shayxontoxir tumani , Furqat ko’chasi 4A</li>
-<li><span class="material-symbols-outlined">
-call
-</span><p>+998 71 210 99 99</p></li>
-<li><span class="material-symbols-outlined">
-account_balance_wallet
-</span><p>8 mln so’mdan - 12 mln so’mgacha </p></li>
-              </ul>
+    <section class="about container-fluid">
+        <div class="about-head">
+            <span class="status">top</span>
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="../src/images/sidekix-media-2NHFwqNlpoY-unsplash%201.png" class="img-fluid kindergarten-image rounded-start" alt="...">
+                </div>
+                <div class="col-md-8 about-head-info">
+                    <div class="body">
+                        <h3>INVENTO THE UZBEK INTERNATIONAL SCHOOL</h3>
+                        <p>Xususiy bog’cha</p>
+                        <div class="row">
+                            <ul class="about-head-list">
+                                <li>
+                                    <span class="material-symbols-outlined">alarm</span>
+                                    <p>08:00 - 18:00</p>
+                                </li>
+                                <li>
+                                    <span class="material-symbols-outlined">sentiment_very_satisfied</span>
+                                    <p>2 yoshdan - 7 yoshgacha</p>
+                                </li>
+                                <li>
+                                    <span class="material-symbols-outlined">location_on</span>
+                                    Toshkent shahri , Shayxontoxir tumani , Furqat ko’chasi 4A
+                                </li>
+                                <li>
+                                    <span class="material-symbols-outlined">call</span>
+                                    <p>+998 71 210 99 99</p>
+                                </li>
+                                <li>
+                                    <span class="material-symbols-outlined">account_balance_wallet</span>
+                                    <p>8 mln so’mdan - 12 mln so’mgacha </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="about-head-view" style="display: flex; flex-direction: row">
+                        <span class="material-symbols-outlined">visibility</span>
+                        <p>8756</p>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
-    </div>
-  </div>
-  <div class="about-body">About-body</div>
-  </section>
-  <section class="location">Location</section>
-  <section class="videos">Videos</section>
+        <div class="about-body">
+
+            <!-- Tabs navs -->
+            <ul class="nav nav-tabs" id="ex1" role="tablist">
+                <li class="nav-item tab-item" role="presentation">
+                    <a
+                            class="nav-link active"
+                            id="ex1-tab-1"
+                            data-mdb-toggle="tab"
+                            href="#ex1-tabs-1"
+                            role="tab"
+                            aria-controls="ex1-tabs-1"
+                            aria-selected="true"
+                            style="font-size: 1.3rem; color: #000;"
+                    >Bog'cha haqida</a>
+                </li>
+                <li class="nav-item tab-item" role="presentation">
+                    <a
+                            class="nav-link"
+                            id="ex1-tab-2"
+                            data-mdb-toggle="tab"
+                            href="#ex1-tabs-2"
+                            role="tab"
+                            aria-controls="ex1-tabs-2"
+                            aria-selected="false"
+                            style="font-size: 1.3rem;color: #000;"
+                    >Programma</a>
+                </li>
+                <li class="nav-item tab-item" role="presentation">
+                    <a
+                            class="nav-link"
+                            id="ex1-tab-3"
+                            data-mdb-toggle="tab"
+                            href="#ex1-tabs-3"
+                            role="tab"
+                            aria-controls="ex1-tabs-3"
+                            aria-selected="false"
+                            style="font-size: 1.3rem;color: #000;"
+                    >Galleriya</a>
+                </li>
+            </ul>
+            <!-- Tabs navs -->
+            <div class="p-3">
+                <!-- Tabs content -->
+                <div class="tab-content" id="ex1-content">
+                    <div
+                            class="tab-pane fade show active"
+                            id="ex1-tabs-1"
+                            role="tabpanel"
+                            aria-labelledby="ex1-tab-1"
+                    >
+                        <div class="content">
+                            <h1>Invento International School - 2 yoshdan 7 yoshgacha bo'lgan bolalar uchun jahon ta'lim standartlariga ega noyob xalqaro bolalar bog'chasi.</h1>
+                            <div class="content-status">
+                                <p> ✅ Bolalar original o'quv loyihasi bo'yicha qurilgan yangi zamonaviy binoda tahsil oladi.</p>
+                                <p>✨ Invento xalqaro maktabi uchta ustunga, uchta komponentga asoslangan - bu o'qituvchilar va talabalarning xalqaro tarkibi, noyob infratuzilma, shuningdek, xalqaro
+                                    ta'lim dasturi.</p>
+                                <div>
+                                    <p>✨ Ta'lim muhiti</p>
+                                    <p>⭐️ Invento xalqaro maktabi binosi barcha xalqaro talablar va tajribani hisobga olgan holda ishlab chiqilgan.</p>
+                                </div>
+                                <div><p>✨ O'qituvchilar</p>
+                                    <p>⭐️ Bizda xalqaro mutaxassislar bor. Tanlashda biz ularning xalqaro tajribasi, bilimi va ingliz tilida so‘zlashmaydigan muhitdagi bolalar bilan ishlash usullarini
+                                        hisobga oldik.</p>
+                                </div>
+                                <div>
+                                    <p>✨ Xavfsizlik</p>
+                                    <p>⭐️ Bolalar baxti va xavfsizligi bizning ustuvor vazifamizdir. Bizning jamoamiz har kuni bolalar uchun imkoniyatlar dunyosini ochish uchun har kuni ishlaydi.</p>
+                                </div>
+                            </div>
+                            <div class="content-info">
+                                <p>O‘quv rejasi maktabgacha ta’limga qo‘yiladigan Davlat talablari va “Bolajon” ta’lim dasturi tavsiyalariga, shuningdek, bolalarga qo‘shimcha ta’lim berish bo‘yicha
+                                    ishlovchi korrektsion va rivojlantiruvchi dasturlarga muvofiq tuzilgan:
+
+                                    Sehrli barmoqlar - badiiy va estetik tsiklning murakkab darsi (qo'llash, origami, modellashtirish, san'at va boshqalar) (haftasiga 2 marta).
+                                    M. Montessori uslubiga ko'ra mashg'ulotlar "Menga buni o'zim qilishimga yordam bering!" (Rejalashtirilgan).
+                                    Ingliz tili ("Narru bolalar") - bolalarni inglizlarning madaniyati va an'analari bilan tanishtirishga qaratilgan oddiydan murakkabgacha bo'lgan usul bo'yicha
+                                    darslar,
+                                    inglizcha she'rlar, qo'shiqlar, o'yinlar bilan tanishtiriladi (haftada 2 marta).
+                                    Bolalarni maktabga tayyorlash ("Scrabble") professional vazifadir, shuning uchun o'qituvchi psixolog bilan birgalikda integratsiyalashgan sinflar orqali bolalarni
+                                    maktabga tayyorlaydi.
+                                    Logoped ("Govorun") bilan mashg'ulotlar haftada 3 marta individual asosda 4 yoshdan bolalar bilan o'tkaziladi va mashg'ulotlar jadvaliga kiritilmaydi.
+                                    Xoreografiya ("Quvnoq raqs maydonchasi") - bu ritm (kichik guruh), aerobika va gimnastika (o'rta, katta va tayyorgarlik guruhlari) elementlarini birlashtirgan
+                                    murakkab
+                                    dars (haftasiga 2 marta).
+                                    Psixologik yordam (“Men qila olaman!”): Pedagogik psixolog o'qituvchilar bilan birgalikda va sizning ishtirokingiz bilan bolangizga quvnoq va faol, mustaqil va
+                                    do'stona, yordam beruvchi va izlanuvchan, faol va o'ziga ishongan, ochiq bo'lib qolishga yordam beradi. va empatik - ya'ni. psixologik jihatdan sog'lom. Psixolog
+                                    bilan
+                                    mashg'ulotlar haftada 3 marta individual asosda o'tkaziladi va mashg'ulotlar jadvaliga kiritilmaydi.
+                                    Atrofimizdagi musiqa ("Musiqa bizni bog'ladi"). Musiqiy direktor qiziqarli stsenariylarni tuzadi, zalni loyihalashtiradi va o'qituvchilar bilan birgalikda ko'plab
+                                    bayramlarni o'tkazadi, ularning tuzilishi boshqa san'at turlarini - tasviriy san'at, badiiy adabiyot, teatrni birlashtiradi. (haftasiga 2 marta).
+                                    Shaxmat qirolligi. Qadimgi intellektual o'yinda mashg'ulotlar haftada 2 marta bolalar bilan ishlashning interaktiv shakllaridan foydalangan holda amalga oshiriladi.
+                                    Mental arifmetika bo'yicha darslar ("Arximed") "Smartum" kompaniyasidan.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="ex1-tabs-2" role="tabpanel" aria-labelledby="ex1-tab-2">
+                        <div class="content">
+                            <h3>Bog’cha xususiyatlari</h3>
+                            <div class="content-info-status row">
+                                <ul class="col">
+                                    <li>Suzish</li>
+                                    <li>Mental arifmetika</li>
+                                    <li>Gimnastika</li>
+                                    <li>Raqsga tushish</li>
+                                    <li>Maktabga tayyorgarlik</li>
+                                </ul>
+                                <ul class="col">
+                                    <li>Massaj</li>
+                                    <li>Nutq terapevti</li>
+                                    <li>Shaxmat</li>
+                                    <li>Xoreografiya</li>
+                                    <li>Taekvondo va Gimnastika</li>
+                                </ul>
+
+                                <ul class="col">
+                                    <li>Qo’shimcha darslar</li>
+                                    <li>Chet tillar</li>
+                                    <li>Arab tili</li>
+                                    <li>Ingliz tili</li>
+                                    <li>O'quv ekskursiyalari</li>
+                                </ul>
+                            </div>
+                            <div class="content-body">
+                                <p>Ovqatlanish 5 mahal bo’lib , O’zbekiston Respublikasi sog’liqni saqlash tomonidan nazorat qilish asosida ovqat tarkiblari. Biz bolani normal o'sishi va rivojlanishi
+                                    uchun zarur bo'lgan kuniga 5 ta muvozanatli ovqat bilan ta'minlaymiz </p>
+                            </div>
+                            <div class="program-info">
+                                <ul>
+                                    <li>Nonushta - 09:00</li>
+                                    <li>Ikkinchi nonushta - 10:30</li>
+                                    <li>Tushlik - 12:30</li>
+                                    <li>Peshindan keyingi snack - 15:30</li>
+                                    <li>Kechki ovqat - 17:30</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="ex1-tabs-3" role="tabpanel" aria-labelledby="ex1-tab-3">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-2">
+                                    <div class="card">
+                                        <img src="../src/images/image%2021.png" alt="" class="img-fluid"/>
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    <div class="card">
+                                        <img src="../src/images/image%2021.png" alt="" class="img-fluid"/>
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    <div class="card">
+                                        <img src="../src/images/image%2021.png" alt="" class="img-fluid"/>
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    <div class="card">
+                                        <img src="../src/images/image%2021.png" alt="" class="img-fluid"/>
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    <div class="card">
+                                        <img src="../src/images/image%2021.png" alt="" class="img-fluid"/>
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    <div class="card">
+                                        <img src="../src/images/image%2021.png" alt="" class="img-fluid"/>
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    <div class="card">
+                                        <img src="../src/images/image%2021.png" alt="" class="img-fluid"/>
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    <div class="card">
+                                        <img src="../src/images/image%2021.png" alt="" class="img-fluid"/>
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    <div class="card">
+                                        <img src="../src/images/image%2021.png" alt="" class="img-fluid"/>
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    <div class="card">
+                                        <img src="../src/images/image%2021.png" alt="" class="img-fluid"/>
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    <div class="card">
+                                        <img src="../src/images/image%2021.png" alt="" class="img-fluid"/>
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    <div class="card">
+                                        <img src="../src/images/image%2021.png" alt="" class="img-fluid"/>
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    <div class="card">
+                                        <img src="../src/images/image%2021.png" alt="" class="img-fluid"/>
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    <div class="card">
+                                        <img src="../src/images/image%2021.png" alt="" class="img-fluid"/>
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    <div class="card">
+                                        <img src="../src/images/image%2021.png" alt="" class="img-fluid"/>
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    <div class="card">
+                                        <img src="../src/images/image%2021.png" alt="" class="img-fluid"/>
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    <div class="card">
+                                        <img src="../src/images/image%2021.png" alt="" class="img-fluid"/>
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    <div class="card">
+                                        <img src="../src/images/image%2021.png" alt="" class="img-fluid"/>
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    <div class="card">
+                                        <img src="../src/images/image%2021.png" alt="" class="img-fluid"/>
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    <div class="card">
+                                        <img src="../src/images/image%2021.png" alt="" class="img-fluid"/>
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    <div class="card">
+                                        <img src="../src/images/image%2021.png" alt="" class="img-fluid"/>
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    <div class="card">
+                                        <img src="../src/images/image%2021.png" alt="" class="img-fluid"/>
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    <div class="card">
+                                        <img src="../src/images/image%2021.png" alt="" class="img-fluid"/>
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    <div class="card">
+                                        <img src="../src/images/image%2021.png" alt="" class="img-fluid"/>
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    <div class="card">
+                                        <img src="../src/images/image%2021.png" alt="" class="img-fluid"/>
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    <div class="card">
+                                        <img src="../src/images/image%2021.png" alt="" class="img-fluid"/>
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    <div class="card">
+                                        <img src="../src/images/image%2021.png" alt="" class="img-fluid"/>
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    <div class="card">
+                                        <img src="../src/images/image%2021.png" alt="" class="img-fluid"/>
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    <div class="card">
+                                        <img src="../src/images/image%2021.png" alt="" class="img-fluid"/>
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    <div class="card">
+                                        <img src="../src/images/image%2021.png" alt="" class="img-fluid"/>
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    <div class="card">
+                                        <img src="../src/images/image%2021.png" alt="" class="img-fluid"/>
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    <div class="card">
+                                        <img src="../src/images/image%2021.png" alt="" class="img-fluid"/>
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    <div class="card">
+                                        <img src="../src/images/image%2021.png" alt="" class="img-fluid"/>
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    <div class="card">
+                                        <img src="../src/images/image%2021.png" alt="" class="img-fluid"/>
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    <div class="card">
+                                        <img src="../src/images/image%2021.png" alt="" class="img-fluid"/>
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    <div class="card">
+                                        <img src="../src/images/image%2021.png" alt="" class="img-fluid"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tabs content -->
+            </div>
+
+        </div>
+
+    </section>
+    <section class="location">
+        <h1>Joylashuv</h1>
+        <img src="../src/images/Screen%20Shot%202022-09-14%20at%2013.02%201.png" class="img-fluid" alt="location">
+    </section>
+    <section class="videos">
+        <h3>Videolar</h3>
+        <div class="row">
+            <div class="col">
+                <div class="ratio ratio-16x9">
+                    <iframe width="1051" height="591" src="https://www.youtube.com/embed/7KcGG1kQK7c" title="Join INVENTO International School!" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col">
+                    <div class="ratio ratio-16x9">
+                        <iframe width="1051" height="591" src="https://www.youtube.com/embed/h0UodkDcTZo" title="Safety of every young learner is the key priority for INVENTO." frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="ratio ratio-16x9">
+                        <iframe width="1051" height="591" src="https://www.youtube.com/embed/euPHDRcil6k" title="Invento International School - Extended Highlights" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="ratio ratio-16x9">
+                        <iframe width="1051" height="591" src="https://www.youtube.com/embed/wM8ODI3DdMg" title="Invento International School | Event Highlights" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </div>
 
 <!-- footer -->
 <footer>
-  <div class="row">
-    <div class="footer-content-1">
-      <p>Axborot xizmati</p>
-      <p>bolajon@gmail.com</p>
-      <p>+998914348629 +998999666886</p>
+    <div class="row">
+        <div class="footer-content-1">
+            <p>Axborot xizmati</p>
+            <p>bolajon@gmail.com</p>
+            <p>+998914348629 +998999666886</p>
+        </div>
+        <div class="footer-content-2">
+            <ul class="footer-ul">
+                <li>
+                    <a href=""><img src="../src/images/Facebook.png" alt="facebook"/></a>
+                </li>
+                <li>
+                    <a href=""
+                    ><img src="../src/images/Instagram.png" alt="instagram"
+                    /></a>
+                </li>
+                <li>
+                    <a href=""
+                    ><img src="../src/images/Telegramf.png" alt="telegram"
+                    /></a>
+                </li>
+                <li>
+                    <a href=""><img src="../src/images/TikTok.png" alt="facebook"/></a>
+                </li>
+            </ul>
+        </div>
     </div>
-    <div class="footer-content-2">
-      <ul class="footer-ul">
-        <li>
-          <a href=""><img src="../src/images/Facebook.png" alt="facebook"/></a>
-        </li>
-        <li>
-          <a href=""
-          ><img src="../src/images/Instagram.png" alt="instagram"
-          /></a>
-        </li>
-        <li>
-          <a href=""
-          ><img src="../src/images/Telegramf.png" alt="telegram"
-          /></a>
-        </li>
-        <li>
-          <a href=""><img src="../src/images/TikTok.png" alt="facebook"/></a>
-        </li>
-      </ul>
-    </div>
-  </div>
 </footer>
 
 <!-- Optional JavaScript; choose one of the two! -->
@@ -167,7 +554,11 @@ account_balance_wallet
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"
 ></script>
-
+<!-- MDB -->
+<script
+        type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.js"
+></script>
 <!-- Option 2: Separate Popper and Bootstrap JS -->
 <!--
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
