@@ -54,7 +54,8 @@ a img {
     width: 15px;
     height: 15px;
 }
-.accordion button{
+
+.accordion button {
     width: 20rem;
 }
 
@@ -69,7 +70,7 @@ a img {
     height: auto;
     width: 100vw;
     margin: 0;
-    padding: 75px 0;
+    padding: 75px 0 0 0;
 }
 
 .section-1 {
@@ -359,52 +360,64 @@ footer ul li {
 footer p {
     color: black;
 }
+
 @media screen and (min-width: 250px ) and (max-width: 300px) {
     .main {
         padding: 0;
     }
-    .navbar{
+
+    .navbar {
         width: 100vw;
     }
-    .form-control{
-        width:  80px;
+
+    .form-control {
+        width: 80px;
     }
 
     .tabs {
         display: flex;
         overflow: visible;
     }
-    .tabs .nav-item{
+
+    .tabs .nav-item {
         width: 140px;
     }
-    form{
+
+    form {
         display: none;
         overflow: hidden;
     }
-    form input{
-        display: none;
-    }
-    .form-control{
+
+    form input {
         display: none;
     }
 
-    .input-group-text{
+    .form-control {
         display: none;
     }
-    .container-fluid{
+
+    .input-group-text {
+        display: none;
+    }
+
+    .container-fluid {
         display: flex;
         justify-content: space-between;
     }
-    .navbar-brand{
+
+    .navbar-brand {
         margin-left: 100px;
     }
-    .card{
+
+    .card {
         height: 330px;
     }
-    .accordion button{
+
+    .accordion button {
         width: 210px;
         padding: 20px 0;
     }
+
     .material-symbols-outlined {
         font-variation-settings: 'FILL' 0,
         'wght' 300,
@@ -470,9 +483,11 @@ footer p {
         display: flex;
         overflow: visible;
     }
-    .card{
+
+    .card {
         height: 350px;
     }
+
     .material-symbols-outlined {
         font-variation-settings: 'FILL' 0,
         'wght' 300,
@@ -515,10 +530,11 @@ footer p {
         width: 300px;
     }
 
-    .accordion button{
+    .accordion button {
         margin: 0;
         width: 78vw;
     }
+
     .news-body {
         padding: 0
     }
@@ -569,19 +585,24 @@ footer p {
         margin: 0;
         width: 320px;
     }
-    .accordion button{
+
+    .accordion button {
         width: 288px;
     }
+
     .m-3 {
         margin: 10px 5px !important;
     }
-    .accordion-header button{
+
+    .accordion-header button {
         width: 300px;
     }
-    .accordion-header button::after{
+
+    .accordion-header button::after {
         width: 40px;
     }
-    .btn{
+
+    .btn {
         width: 300px;
     }
 
@@ -743,13 +764,13 @@ footer p {
     }
 }
 
-@media screen and (max-width: 760px) and (max-width: 1000px) {
+@media screen and (min-width: 760px) and (max-width: 1000px) {
     .main {
         padding: 0;
     }
 
     .tabs {
-        display: flex;
+        display: none;
         overflow: visible;
     }
 
@@ -763,12 +784,31 @@ footer p {
     .left {
         left: 0;
         width: auto;
+        height: min-content;
+    }
+
+    .sidebar {
+        display: block;
+        width: auto;
+        height: min-content;
+    }
+
+    .tab-content .left {
+        display: flex;
+        float: left;
+        margin: 30px 0 0 30px;
+        width: auto;
     }
 
     .tab-content .right {
         flex-direction: column;
         padding: 0;
-        margin: 0;
+        width: 40%;
+        margin: 30px 0 0 0;
+        display: block;
+    }
+    .accordion{
+        margin: 10px 0 0 0;
     }
 
     .col {
@@ -784,6 +824,12 @@ footer p {
         margin: 10px 5px !important;
     }
 
+    .section-1{
+        height: 900px;
+        display: block;
+        box-sizing: border-box;
+        overflow: scroll;
+    }
     .grid {
         padding: 0 15px;
         margin: 0;
@@ -791,11 +837,31 @@ footer p {
     }
 
     .section-2 {
-        width: 300px;
+        width: auto;
+        padding: 50px 0;
+    }
+    .section-2 .col{
+        width: 50%;
+        padding: 10px;
+    }
+    .section-2 .col .card{
+        width: 100% !important;
+        height: auto !important;
+        position: relative;
+        /*margin: 10px;*/
+    }
+    .section-2 .col .card .card-body{
+        padding: 10px;
+    }
+    .section-2 .col .card h4{
+        font-size: 18px;
     }
 
     .news-body {
-        padding: 0
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        width: auto;
     }
 
     .section-3 {
@@ -807,3 +873,443 @@ footer p {
     }
 }
 
+@media screen and (min-width: 1000px) and (max-width: 1265px) {
+    .main {
+        padding: 50px 0 0 0;
+        margin: 0;
+    }
+
+    .nav-tabs {
+        display: none;
+        overflow: visible;
+    }
+
+    .left {
+        display: flex !important;
+        float: left;
+        position: initial;
+    }
+
+    .section-1 .sidebar {
+        margin: 5px 0 0 0;
+        display: flow-root;
+        float: left;
+        position: absolute;
+    }
+
+    .col {
+        width: 380px !important;
+    }
+
+    .right {
+        float: right;
+        display: flow-root;
+        position: relative;
+    }
+
+    .grid {
+        padding: 0;
+        margin: 0;
+        right: -35%;
+    }
+
+    .card {
+        margin: 0;
+    }
+
+    .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0,
+        'wght' 300,
+        'GRAD' 0,
+        'opsz' 20
+    }
+
+    .section-2 {
+        padding: 0;
+        margin-bottom: 80px;
+    }
+
+    .news-body {
+        width: 100vw;
+    }
+
+    .section-3 {
+        padding: 0;
+        width: auto;
+    }
+
+    .info-section {
+        padding: 50px;
+    }
+
+    .info-body p {
+        font-size: 15px;
+        width: 400px;
+    }
+
+    .info-customers {
+        margin-top: 0;
+        width: 100px;
+    }
+
+    .info-customers .info-ellipse .column h1 {
+        font-size: 25px;
+    }
+
+    .info-ellipse {
+        margin-top: 40px;
+    }
+
+    .section-3 h1 {
+        font-size: 40px;
+    }
+
+    .group {
+        top: 40%;
+        left: 40%;
+        width: 400px;
+    }
+
+    footer {
+        width: 100vw;
+    }
+}
+
+@media screen and (min-width: 1265px) and (max-width: 1400px) {
+    .main {
+        padding: 50px 0 0 0;
+        margin: 0;
+    }
+
+    .nav-tabs {
+        display: none;
+        overflow: visible;
+    }
+
+    .left {
+        display: flex !important;
+        float: left;
+        position: initial;
+    }
+
+    .section-1 .sidebar {
+        margin: 5px 0 0 0;
+        display: flow-root;
+        float: left;
+        position: absolute;
+    }
+
+    .col {
+        width: 380px !important;
+    }
+
+    .right {
+        float: right;
+        display: flow-root;
+        position: relative;
+    }
+
+    .grid {
+        padding: 0;
+        margin: 0;
+        right: 0;
+    }
+
+    .card {
+        margin: 0;
+        width: 280px !important;
+        height: 350px;
+    }
+
+    .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0,
+        'wght' 300,
+        'GRAD' 0,
+        'opsz' 20
+    }
+
+    .section-2 {
+        padding: 0;
+        margin-bottom: 80px;
+    }
+
+    .news-body {
+        width: 100vw;
+    }
+
+    .section-3 {
+        padding: 0;
+        width: 100vw;
+        margin-bottom: 50px;
+    }
+
+    .info-section {
+        padding: 50px;
+    }
+
+    .info-body p {
+        font-size: 20px;
+        line-height: 1.1em;
+        width: 500px;
+    }
+
+    .info-customers {
+        margin-top: 0;
+        width: 100px;
+    }
+
+    .info-customers .info-ellipse .column h1 {
+        font-size: 25px;
+    }
+
+    .info-ellipse {
+        margin-top: 40px;
+    }
+
+    .section-3 h1 {
+        font-size: 50px;
+    }
+
+    .group {
+        top: 30%;
+        left: 40%;
+        width: 400px;
+    }
+
+    .group img {
+        width: 650px;
+    }
+
+    footer {
+        width: 100vw;
+    }
+}
+
+@media screen and (min-width: 1400px) and (max-width: 1600px) {
+    .main {
+        padding: 50px 0 0 0;
+        margin: 0;
+    }
+
+    .nav-tabs {
+        display: none;
+        overflow: visible;
+    }
+
+    .left {
+        display: flex !important;
+        float: left;
+        position: initial;
+    }
+
+    .section-1 .sidebar {
+        margin: 5px 0 0 0;
+        display: flow-root;
+        float: left;
+        position: absolute;
+    }
+
+    .col {
+        width: 380px !important;
+    }
+
+    .right {
+        float: right;
+        display: flow-root;
+        position: relative;
+    }
+
+    .grid {
+        padding: 0;
+        margin: 0;
+        right: 0;
+    }
+
+    .card {
+        margin: 0;
+        width: 330px !important;
+        height: 350px;
+    }
+
+    #ex2-tabs-1 .card {
+        height: 400px;
+    }
+
+    .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0,
+        'wght' 300,
+        'GRAD' 0,
+        'opsz' 20
+    }
+
+    .section-2 {
+        padding: 0;
+        margin-bottom: 80px;
+    }
+
+    .news-body {
+        width: 100vw;
+    }
+
+    .section-3 {
+        padding: 0;
+        width: 100vw;
+        margin-bottom: 50px;
+    }
+
+    .info-section {
+        padding: 50px;
+    }
+
+    .info-body p {
+        font-size: 20px;
+        line-height: 1.1em;
+        width: 500px;
+    }
+
+    .info-customers {
+        margin-top: 0;
+        width: 100px;
+    }
+
+    .info-customers .info-ellipse .column h1 {
+        font-size: 25px;
+    }
+
+    .info-ellipse {
+        margin-top: 40px;
+    }
+
+    .section-3 h1 {
+        font-size: 50px;
+    }
+
+    .group {
+        top: 30%;
+        left: 47%;
+        width: 400px;
+    }
+
+    .group img {
+        width: 650px;
+    }
+
+    footer {
+        width: 100vw;
+    }
+}
+
+@media screen and (min-width: 1600px) and (max-width: 2000px) {
+    .main {
+        padding: 50px 0 0 0;
+        margin: 0;
+    }
+
+    .nav-tabs {
+        display: none;
+        overflow: visible;
+    }
+
+    .left {
+        display: flex !important;
+        float: left;
+        position: initial;
+    }
+
+    .section-1 .sidebar {
+        margin: 5px 0 0 0;
+        display: flow-root;
+        float: left;
+        position: absolute;
+    }
+
+    .col {
+        width: 380px !important;
+    }
+
+    .right {
+        float: right;
+        /*display: flow-root;*/
+        position: relative;
+    }
+
+    .grid {
+        padding: 0;
+        margin: 0;
+        right: 0;
+    }
+
+    .card {
+        margin: 0;
+        width: 330px !important;
+        height: 350px;
+    }
+
+    #ex2-tabs-1 .card {
+        height: 400px;
+    }
+
+    .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0,
+        'wght' 300,
+        'GRAD' 0,
+        'opsz' 20
+    }
+
+    .section-2 {
+        padding: 30px 0;
+        margin-bottom: 80px;
+    }
+
+    .news-body {
+        width: auto;
+        margin: 0 40px;
+    }
+
+    .section-3 {
+        padding: 0;
+        width: 100vw;
+        margin-bottom: 50px;
+    }
+
+    .info-section {
+        padding: 50px;
+    }
+
+    .info-body p {
+        font-size: 20px;
+        line-height: 1.1em;
+        width: 500px;
+    }
+
+    .info-customers {
+        margin-top: 0;
+        width: 100px;
+    }
+
+    .info-customers .info-ellipse .column h1 {
+        font-size: 25px;
+    }
+
+    .info-ellipse {
+        margin-top: 40px;
+    }
+
+    .section-3 h1 {
+        font-size: 50px;
+    }
+
+    .group {
+        top: 30%;
+        left: 47%;
+        width: 400px;
+    }
+
+    .group img {
+        width: 650px;
+    }
+
+    footer {
+        width: 100vw;
+    }
+}

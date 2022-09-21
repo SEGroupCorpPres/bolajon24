@@ -5,6 +5,7 @@
 }
 body {
     background-color: #f4f6f9;
+    background-color: black;
     font-family: "Nuckle", norlmal, sans-serif;
 }
 
@@ -94,7 +95,7 @@ a img{
 }
 
 .body {
-    width: 800px;
+    width: 700px;
 }
 
 .body ul li .material-symbols-outlined {
@@ -205,15 +206,892 @@ a img{
 footer ul li{
     margin: 0 10px;
 }
-
-@media screen and (max-width: 360px) {
-    .navbar {
-        width: 100vw;
-        height: auto;
+@media screen and (min-width: 250px ) and (max-width: 300px) {
+    .main {
+        padding: 20px 0;
+    }
+    .row{
+        box-sizing: border-box;
+        display: block;
     }
 
-    .section-3 {
-        display: none;
+    .kindergarten-image{
+        width: 100%;
+        height: auto;
+    }
+    .about-head{
+        margin-bottom: 20px;
+    }
+    .about-head-info{
+        padding: 20px;
+    }
+    .about-head-info .body{
+        display: inline;
+    }
+    .about-head-view{
+        align-items: center;
+    }
+    .about-head-view p{
+        margin-bottom: 0;
+    }
+
+    #ex1-tab-1, #ex1-tab-2, #ex1-tab-3{
+        padding: 10px;
+        font-size: 10px !important;
+    }
+    .nav-tabs .nav-link {
+        border-width: 0 0 5px;
+        border-radius: 0 0 3px 3px;
+    }
+    .content-status p{
+        font-size: 15px;
+    }
+    .content-status div p{
+        line-height: 1.2rem;
+    }
+    .content-info p{
+        font-size: 15px;
+    }
+    .content-info-status{
+        padding: 10px;
+    }
+    .content-body{
+        padding: 0;
+    }
+    .program-info{
+        padding: 0;
+    }
+    .program-info ul{
+        padding: 0;
+    }
+    .col-2{
+        padding: 0;
+    }
+    .card{
+        width: 220px;
+        height: auto;
+        padding-bottom: 10px;
+        border-radius: 8px;
+    }
+    .img-fluid{
+        border-radius: 8px;
+    }
+    .location-img{
+        display: block;
+        box-sizing: border-box;
+        height: 200px;
+        overflow: scroll;
+        width: auto;
+        border-radius: 8px;
+    }
+    .videos>.row>.col-sm-4{
+        background-color: transparent !important;
+        padding: 0 !important;
+    }
+    .videos>.row{
+        background-color: transparent;
+    }
+    iframe{
+        padding: 10px 0;
+    }
+    h1{
+        font-size: 18px;
+    }
+    h3{
+        font-size: 15px;
+    }
+    .btn {
+        width: 300px;
+    }
+
+    footer {
+        width: 100vw;
+    }
+}
+
+@media screen and (min-width: 300px ) and (max-width: 330px) {
+    .main {
+        padding: 20px 0;
+    }
+    .row{
+        box-sizing: border-box;
+        display: block;
+    }
+
+    .kindergarten-image{
+        width: 100%;
+        height: auto;
+    }
+    .about-head{
+        margin-bottom: 20px;
+    }
+    .about-head-info{
+        padding: 20px;
+    }
+    .about-head-info .body{
+        display: inline;
+    }
+    .about-head-view{
+        align-items: center;
+    }
+    .about-head-view p{
+        margin-bottom: 0;
+    }
+
+    #ex1-tab-1, #ex1-tab-2, #ex1-tab-3{
+        padding: 10px;
+        font-size: 10px !important;
+    }
+    .nav-tabs .nav-link {
+        border-width: 0 0 5px;
+        border-radius: 0 0 3px 3px;
+    }
+    .content-status p{
+        font-size: 15px;
+    }
+    .content-status div p{
+        line-height: 1.2rem;
+    }
+    .content-info p{
+        font-size: 15px;
+    }
+    .content-info-status{
+        padding: 10px;
+    }
+    .content-body{
+        padding: 0;
+    }
+    .program-info{
+        padding: 0;
+    }
+    .program-info ul{
+        padding: 0;
+    }
+    .col-2{
+        padding: 0;
+    }
+    .card{
+        width: 260px;
+        height: auto;
+        padding-bottom: 10px;
+        border-radius: 8px;
+    }
+    .img-fluid{
+        border-radius: 8px;
+    }
+    .location-img{
+        display: block;
+        box-sizing: border-box;
+        height: 200px;
+        overflow: scroll;
+        width: auto;
+        border-radius: 8px;
+    }
+    .videos>.row>.col-sm-4{
+        background-color: transparent !important;
+        padding: 0 !important;
+    }
+    .videos>.row{
+        background-color: transparent;
+    }
+    iframe{
+        padding: 10px 0;
+    }
+    h1{
+        font-size: 18px;
+    }
+    h3{
+        font-size: 15px;
+    }
+    .btn {
+        width: 300px;
+    }
+
+    footer {
+        width: 100vw;
+    }
+}
+
+@media screen and (min-width: 330px ) and (max-width: 380px) {
+    .main {
+        padding: 20px 0;
+    }
+    .row{
+        box-sizing: border-box;
+        display: block;
+    }
+
+    .kindergarten-image{
+        width: 100%;
+        height: auto;
+    }
+    .about-head{
+        margin-bottom: 20px;
+    }
+    .about-head-info{
+        padding: 20px;
+    }
+    .about-head-info .body{
+        display: inline;
+    }
+    .about-head-view{
+        align-items: center;
+    }
+    .about-head-view p{
+        margin-bottom: 0;
+    }
+
+    #ex1-tab-1, #ex1-tab-2, #ex1-tab-3{
+        padding: 10px;
+        font-size: 10px !important;
+    }
+    .nav-tabs .nav-link {
+        border-width: 0 0 5px;
+        border-radius: 0 0 3px 3px;
+    }
+    .content-status p{
+        font-size: 15px;
+    }
+    .content-status div p{
+        line-height: 1.2rem;
+    }
+    .content-info p{
+        font-size: 15px;
+    }
+    .content-info-status{
+        padding: 10px;
+    }
+    .content-body{
+        padding: 0;
+    }
+    .program-info{
+        padding: 0;
+    }
+    .program-info ul{
+        padding: 0;
+    }
+    .col-2{
+        padding: 0;
+    }
+    .card{
+        width: 85vw;
+        height: auto;
+        padding-bottom: 10px;
+        border-radius: 8px;
+    }
+    .img-fluid{
+        border-radius: 8px;
+    }
+    .location-img{
+        display: block;
+        box-sizing: border-box;
+        height: 200px;
+        overflow: scroll;
+        width: auto;
+        border-radius: 8px;
+    }
+    .videos>.row>.col-sm-4{
+        background-color: transparent !important;
+        padding: 0 !important;
+    }
+    .videos>.row{
+        background-color: transparent;
+    }
+    iframe{
+        padding: 10px 0;
+    }
+    h1{
+        font-size: 18px;
+    }
+    h3{
+        font-size: 15px;
+    }
+    .btn {
+        width: 300px;
+    }
+
+    footer {
+        width: 100vw;
+    }
+}
+
+@media screen and (min-width: 380px) and (max-width: 400px) {
+    .main {
+        padding: 20px 0;
+    }
+    .row{
+        box-sizing: border-box;
+        display: block;
+    }
+
+    .kindergarten-image{
+        width: 100%;
+        height: auto;
+    }
+    .about-head{
+        margin-bottom: 20px;
+    }
+    .about-head-info{
+        padding: 20px;
+    }
+    .about-head-info .body{
+        display: inline;
+    }
+    .about-head-view{
+        align-items: center;
+    }
+    .about-head-view p{
+        margin-bottom: 0;
+    }
+
+    #ex1-tab-1, #ex1-tab-2, #ex1-tab-3{
+        padding: 10px;
+        font-size: 10px !important;
+    }
+    .nav-tabs .nav-link {
+        border-width: 0 0 5px;
+        border-radius: 0 0 3px 3px;
+    }
+    .content-status p{
+        font-size: 15px;
+    }
+    .content-status div p{
+        line-height: 1.2rem;
+    }
+    .content-info p{
+        font-size: 15px;
+    }
+    .content-info-status{
+        padding: 10px;
+    }
+    .content-body{
+        padding: 0;
+    }
+    .program-info{
+        padding: 0;
+    }
+    .program-info ul{
+        padding: 0;
+    }
+    .col-2{
+        padding: 0;
+    }
+    .card{
+        width: 330px;
+        height: auto;
+        padding-bottom: 10px;
+        border-radius: 8px;
+    }
+    .img-fluid{
+        border-radius: 8px;
+    }
+    .location-img{
+        display: block;
+        box-sizing: border-box;
+        height: 200px;
+        overflow: scroll;
+        width: auto;
+        border-radius: 8px;
+    }
+    .videos>.row>.col-sm-4{
+        background-color: transparent !important;
+        padding: 0 !important;
+    }
+    .videos>.row{
+        background-color: transparent;
+    }
+    iframe{
+        padding: 10px 0;
+    }
+    h1{
+        font-size: 18px;
+    }
+    h3{
+        font-size: 15px;
+    }
+    .btn {
+        width: 300px;
+    }
+
+    footer {
+        width: 100vw;
+    }
+}
+
+@media screen and (min-width: 400px) and (max-width: 420px) {
+    .main {
+        padding: 20px 0;
+    }
+    .row{
+        box-sizing: border-box;
+        display: block;
+    }
+
+    .kindergarten-image{
+        width: 100%;
+        height: auto;
+    }
+    .about-head{
+        margin-bottom: 20px;
+    }
+    .about-head-info{
+        padding: 20px;
+    }
+    .about-head-info .body{
+        display: inline;
+    }
+    .about-head-view{
+        align-items: center;
+    }
+    .about-head-view p{
+        margin-bottom: 0;
+    }
+
+    #ex1-tab-1, #ex1-tab-2, #ex1-tab-3{
+        padding: 10px;
+        font-size: 10px !important;
+    }
+    .nav-tabs .nav-link {
+        border-width: 0 0 5px;
+        border-radius: 0 0 3px 3px;
+    }
+    .content-status p{
+        font-size: 15px;
+    }
+    .content-status div p{
+        line-height: 1.2rem;
+    }
+    .content-info p{
+        font-size: 15px;
+    }
+    .content-info-status{
+        padding: 10px;
+    }
+    .content-body{
+        padding: 0;
+    }
+    .program-info{
+        padding: 0;
+    }
+    .program-info ul{
+        padding: 0;
+    }
+    .col-2{
+        padding: 0;
+    }
+    .card{
+        width: 355px;
+        height: auto;
+        padding-bottom: 10px;
+        border-radius: 8px;
+    }
+    .img-fluid{
+        border-radius: 8px;
+    }
+    .location-img{
+        display: block;
+        box-sizing: border-box;
+        height: 200px;
+        overflow: scroll;
+        width: auto;
+        border-radius: 8px;
+    }
+    .videos>.row>.col-sm-4{
+        background-color: transparent !important;
+        padding: 0 !important;
+    }
+    .videos>.row{
+        background-color: transparent;
+    }
+    iframe{
+        padding: 10px 0;
+    }
+    h1{
+        font-size: 18px;
+    }
+    h3{
+        font-size: 15px;
+    }
+    .btn {
+        width: 300px;
+    }
+
+    footer {
+        width: 100vw;
+    }
+}
+
+@media screen and (min-width: 760px) and (max-width: 1000px) {
+    .main {
+        padding: 20px 70px;
+    }
+    .row{
+        box-sizing: border-box;
+        display: flex;
+    }
+
+    .kindergarten-image{
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+    }
+    .about-head{
+        display: flex;
+        margin-bottom: 20px;
+    }
+    .about-head-info{
+        padding: 20px;
+    }
+    .about-head-info .body{
+        display: inline;
+    }
+    .about-head-view{
+        align-items: center;
+    }
+    .about-head-view p{
+        margin-bottom: 0;
+    }
+
+    #ex1-tab-1, #ex1-tab-2, #ex1-tab-3{
+        padding: 10px;
+        font-size: 10px !important;
+    }
+    .nav-tabs .nav-link {
+        border-width: 0 0 5px;
+        border-radius: 0 0 3px 3px;
+    }
+    .content-status p{
+        font-size: 15px;
+    }
+    .content-status div p{
+        line-height: 1.2rem;
+    }
+    .content-info p{
+        font-size: 15px;
+    }
+    .content-info-status{
+        padding: 10px;
+    }
+    .content-body{
+        padding: 0;
+    }
+    .program-info{
+        padding: 0;
+    }
+    .program-info ul{
+        padding: 0;
+    }
+    .col-2{
+        padding: 0;
+        width: auto;
+    }
+    .tab-pane .card img{
+        padding: 0 15px 0 0;
+        border-radius: 0;
+    }
+    .card{
+        width: 280px;
+        height: auto;
+        padding-bottom: 10px;
+        /*border-radius: 8px;*/
+    }
+    .img-fluid{
+        border-radius: 8px;
+        padding: 20px 0 0 20px;
+    }
+    .location-img{
+        display: block;
+        box-sizing: border-box;
+        height: 400px;
+        overflow: scroll;
+        border-radius: 0;
+        padding: 0;
+    }
+    .videos>.row>.col-sm-4{
+        background-color: transparent !important;
+        padding: 0 !important;
+    }
+    .videos>.row{
+        background-color: transparent;
+    }
+    iframe{
+        padding: 10px 10px;
+    }
+    h1{
+        font-size: 18px;
+    }
+    h3{
+        font-size: 15px;
+    }
+    .btn {
+        width: 300px;
+    }
+
+    footer {
+        width: 100vw;
+    }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1265px) {
+    .main {
+        padding: 20px 200px;
+    }
+    .row{
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .kindergarten-image{
+        width: 100%;
+        height: auto;
+    }
+    .about-head{
+        margin-bottom: 20px;
+        height: auto;
+    }
+    .about-head-info{
+        padding: 20px;
+    }
+    .about-head-info .body{
+        display: inline;
+    }
+    .about-head-view{
+        align-items: center;
+    }
+    .about-head-view p{
+        margin-bottom: 0;
+    }
+
+    .card{
+        width: 100%;
+        height: auto;
+        padding-bottom: 10px;
+        border-radius: 8px;
+    }
+    .img-fluid{
+        border-radius: 8px;
+        padding: 15px;
+        height: auto;
+        width: auto;
+    }
+    .col-2{
+        width: 33.333333%;
+        border-radius: 8px;
+    }
+    .content-status p{
+        line-height: 1.2rem;
+    }
+    .content-status div p{
+        line-height: 1.2rem;
+    }
+    .location-img{
+        display: block;
+        box-sizing: border-box;
+        height: 500px;
+        overflow: scroll;
+        width: auto;
+        border-radius: 8px;
+    }
+    iframe{
+        padding: 10px 0;
+    }
+    h1{
+        font-size: 25px;
+    }
+
+    footer {
+        width: 100vw;
+    }
+}
+
+@media screen and (min-width: 1265px) and (max-width: 1400px) {
+    .main {
+        padding: 20px 200px;
+    }
+    .row{
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .kindergarten-image{
+        width: 100%;
+        height: auto;
+    }
+    .about-head{
+        margin-bottom: 20px;
+        height: auto;
+    }
+    .about-head-info{
+        padding: 20px;
+    }
+    .about-head-info .body{
+        display: inline;
+    }
+    .about-head-view{
+        align-items: center;
+    }
+    .about-head-view p{
+        margin-bottom: 0;
+    }
+
+    .card{
+        width: 100%;
+        height: auto;
+        padding-bottom: 10px;
+        border-radius: 8px;
+    }
+    .img-fluid{
+        border-radius: 8px;
+        padding: 15px;
+        height: auto;
+        width: auto;
+    }
+    .col-2{
+        width: 33.333333%;
+        border-radius: 8px;
+    }
+    .content-status p{
+        line-height: 1.2rem;
+    }
+    .content-status div p{
+        line-height: 1.2rem;
+    }
+    .location-img{
+        display: block;
+        box-sizing: border-box;
+        height: 500px;
+        overflow: scroll;
+        width: auto;
+        border-radius: 8px;
+    }
+    iframe{
+        padding: 10px 0;
+    }
+    h1{
+        font-size: 25px;
+    }
+
+    footer {
+        width: 100vw;
+    }
+}
+
+@media screen and (min-width: 1400px) and (max-width: 1600px) {
+    .main {
+        padding: 20px 200px;
+    }
+    .row{
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .about-head{
+        margin-bottom: 20px;
+        height: auto;
+    }
+    .about-head-info{
+        padding: 20px;
+    }
+    .about-head-info .body{
+        display: inline;
+    }
+    .about-head-view{
+        align-items: center;
+    }
+    .about-head-view p{
+        margin-bottom: 0;
+    }
+
+    .card{
+        width: 100%;
+        height: auto;
+        padding-bottom: 10px;
+        border-radius: 8px;
+    }
+    .img-fluid{
+        border-radius: 8px;
+        width: 100%;
+    }
+    .col-2{
+        width: 33.333333%;
+        border-radius: 8px;
+    }
+    .content-status p{
+        line-height: 1.2rem;
+    }
+    .content-status div p{
+        line-height: 1.2rem;
+    }
+    .location-img{
+        display: block;
+        box-sizing: border-box;
+        height: 500px;
+        overflow: scroll;
+        width: auto;
+        border-radius: 8px;
+    }
+    iframe{
+        padding: 10px 0;
+    }
+    h1{
+        font-size: 25px;
+    }
+
+    footer {
+        width: 100vw;
+    }
+}
+
+@media screen and (min-width: 1600px) and (max-width: 2000px) {
+    .main {
+        padding: 20px 200px;
+    }
+    .row{
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .about-head{
+        margin-bottom: 20px;
+        height: auto;
+    }
+    .about-head-info{
+        padding: 20px;
+    }
+    .about-head-info .body{
+        display: inline;
+    }
+    .about-head-view{
+        align-items: center;
+    }
+    .about-head-view p{
+        margin-bottom: 0;
+    }
+
+    .card{
+        width: 100%;
+        height: auto;
+        padding-bottom: 10px;
+        border-radius: 8px;
+    }
+    .img-fluid{
+        border-radius: 8px;
+        width: auto;
+    }
+    .col-2{
+        width: 25%;
+        border-radius: 8px;
+    }
+    .location-img{
+        display: block;
+        box-sizing: border-box;
+        height: 500px;
+        overflow: scroll;
+        width: auto;
+        border-radius: 8px;
+    }
+    iframe{
+        padding: 10px 0;
     }
 
     footer {
